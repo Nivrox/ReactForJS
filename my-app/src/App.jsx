@@ -1,28 +1,19 @@
+//https://github.com/RamiroCeballes/React ----> EXAMPLE FOR API'S
+//https://pokeapi.co/ -----> API POKEMON
+//https://mui-com.translate.goog/material-ui/getting-started/installation/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc&_x_tr_hist=true
+// PARA LA CLASE QUE VIENE 
 import './App.css'
-
-const person = {
-  name: 'Gregorio Y. Zara',
-  theme: {
-    backgroundColor: 'black',
-    color: 'pink'
-  }
-};
-
-export default function TodoList() {
-  return (
-    <div style={person.theme}>
-      <h1>Tareas Pendientes de {person.name}</h1>
-      <img
-        className="avatar"
-        src="https://i.imgur.com/7vQD0fPs.jpg"
-        alt="Gregorio Y. Zara"
-      />
-      <ul>
-        <li>Mejorar el videoteléfono</li>
-        <li>Preparar clases de aeronáutica</li>
-        <li>Trabajar en el motor de alcohol</li>
-      </ul>
-    </div>
-  );
+import {useEffect } from 'react';
+import {useState } from 'react';
+import FormSearch from './Componentes/FormBusqueda.jsx';
+import Peliculas from './Componentes/Peliculas.jsx';
+function App() {
+  return(
+    <div className="App">
+      <FormSearch />
+      <Peliculas />
+    </div>  
+  )
 }
 
+export default App 
