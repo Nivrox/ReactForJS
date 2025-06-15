@@ -6,10 +6,10 @@ export const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
     const [query, setQuery] = useState("superman");
-    const {movie, movies, searchKey} = useFetch(`&s=${query}`);
-
+    const {isLoading, error, data} = useFetch(`&s=${query}`);
+    
     return (
-        <DataContext.Provider value={{ query, setQuery, movie, movies, searchKey }}>
+        <DataContext.Provider value={{ query, setQuery, isLoading, error, data }}>
             {children}
         </DataContext.Provider>
     );

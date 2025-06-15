@@ -1,27 +1,22 @@
-import { useEffect, useContext } from "react";
+import { useContext } from "react"; 
 import { DataContext } from "../Context/dataContext";
 import ItemPeliculas from "./ItemPeliculas";
 
     const Peliculas = () => {
-        const { isLoading, data } = useContext(DataContext);
+        const { movies, movie } = useContext(DataContext);
         return (
 
-            <div className="peliculas-content">
+            <div className="movies-content" style={{color : 'white'}}>
                 {
-                    !isLoading ? 
-                    data.map(item => (
-                        <ItemPeliculas>
-                            key={item.ImdbID}
-                            id={item.ImdbID}
-                            title={item.Title}
-                            type={item.Type}
-                            year={item.Year}
-                            poster={item.Poster}
-                        </ItemPeliculas>
-                    ))
-                    :"Cargando...."
-
-                }   
+                     (
+                        movies.map(movie => (
+                            <ItemPeliculas
+                                key={movie.id}
+                                movie={movie}
+                            />
+                        ))
+                    ) : "Cargando...."
+                }
             </div>
         );
     }
