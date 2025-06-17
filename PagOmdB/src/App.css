@@ -7,12 +7,59 @@ body{
     background-size: cover;
 }
 
+.favorito-tag {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: gold;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 2;
+}
+.Volver{
+    font-size: 20px;
+    padding: 12px 18px;
+    border-radius: 0px 16px 16px 0px;
+    background-color: rgba(255, 255, 255, 0.369);
+    color: #000000;
+    border: 0;
+    cursor: pointer;
+    margin: 3% 0 5%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.delete-fav{
+    
+    position: "absolute";
+    bottom: "15px";
+    right: "15px";
+    color: "white";
+    background-color: gold;
+    border: none;
+    padding: 20px 35px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 2% 0 3%;        
+
+}
 .movies-content {
     
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+}
+.movies-content p {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
 }
 .item-movie {
     width: 250px;
@@ -51,6 +98,30 @@ body{
 .row-info {
     display: flex;
     justify-content: space-between
+
+}
+.btn-favoritos {
+  background-color: gold;
+  border: none;
+  padding: 20px 35px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 2% 0 3%;
+}
+.favorito-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: gold;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 2;
 }
 .form-search {
     margin: 3% 0 5%;
@@ -67,7 +138,7 @@ body{
 .form-search input[type="submit"] {
     font-size: 20px;
     padding: 12px 18px;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 16px 16px 0px;
     background-color: #000;
     color: #fff;
     border: 0;
@@ -122,8 +193,8 @@ body{
     margin: 0 auto;
     margin-top:  10rem;
     border-radius: 50%;
-    border: 8px solid #000;
-    border-top-color: #FCAF3C;
+    border: 8px solid #140000;
+    border-top-color: #ffffff;
     animation: spinner .6s linear infinite;
 }
 

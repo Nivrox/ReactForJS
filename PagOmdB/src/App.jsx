@@ -3,17 +3,28 @@
 //https://mui-com.translate.goog/material-ui/getting-started/installation/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc&_x_tr_hist=true
 // PARA LA CLASE QUE VIENE 
 import './App.css'
-import {useEffect } from 'react';
-import {useState } from 'react';
-import FormSearch from './Componentes/FormBusqueda.jsx';
-import Peliculas from './Componentes/Peliculas.jsx';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import SingleMovie from './Componentes/SingleMovies.jsx';
+import MainPage from './Componentes/MainPage.jsx';
+import Favoritos from './Componentes/Favoritos/Favoritos.jsx';
+import { ToastContainer } from 'react-toastify';
+
 function App() {
   return(
     <div className="App">
-      <FormSearch />
-      <Peliculas />
-    </div>  
+      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />}   />
+          <Route path="/movies/:id" element={<SingleMovie />} />
+          <Route path="/favorites" element={<Favoritos/>} />
+        </Routes>
+        <ToastContainer />     
+      </BrowserRouter>
+      
+    </div>
+    
   )
 }
 
-export default App 
+export default App;

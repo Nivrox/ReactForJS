@@ -10,18 +10,18 @@ export const useFetch = params => {
     const fetchMovie = url =>{
         setIsLoading(true);
         fetch(url)
-            .then(respuesta => respuesta.json())
-            .then(respuestaJson =>{
-                if (respuestaJson.Response === "True") {
-                    setData(respuestaJson.Search);  
-                    setError(false);
-                }else {
+        .then(respuesta => respuesta.json())
+         .then(respuestaJson =>{
+            if (respuestaJson.Response === "True") {
+                setData(respuestaJson.Search || respuestaJson); // If Search is not available, use the full response
+                setError(false);
+            }else {
                     setError(true);
-                }
-                setIsLoading(false);
-                console.log("data: ", respuestaJson);
-            })
-            .catch(error => console.log(error))
+            }
+            setIsLoading(false);
+            console.log("data: ", respuestaJson);
+        })
+        .catch(error => console.log(error))
     }
 
     useEffect(() => {

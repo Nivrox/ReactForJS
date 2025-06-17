@@ -3,10 +3,9 @@ import { DataContext } from "../Context/dataContext";
 import ItemPeliculas from "./ItemPeliculas";
 
     const Peliculas = () => {
-        const { isLoading, data } = useContext(DataContext);
+        const { isLoading, data } = useContext(DataContext);    
         return (
-
-            <div className="movies-content" style={{color : 'white'}}>
+            <div className="movies-content" >
                 {
                     !isLoading ? 
                     data.map(item => (
@@ -25,5 +24,4 @@ import ItemPeliculas from "./ItemPeliculas";
             </div>
         );
     }
-
 export default Peliculas;

@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react';
 import { DataContext} from '../Context/dataContext';
+import FavoritesButton from './Favoritos/FavortiesButton';
 
 //https://www.omdbapi.com/?apikey=18190454&s=batman
 //https://www.omdbapi.com/?apikey=18190454&i=tt0372784
@@ -17,14 +18,24 @@ const FormSearch = () => {
     } 
     return (
         <div className="form-search">
-
+            
             <h2 style = {{color : 'white'}}>Buscar Peliculas</h2>
             <form onSubmit={handleSubmit}>
                 <input type = "text" placeholder = "Tittle movie" onChange = {e =>setTitle(e.target.value)}/>
                 <input type = "submit" value = "buscar"/> 
-                 
             </form>
+            
+
+            {error && <p className= "error" style={{color: 'white'}}> La pelicula No existe<br />
+            Recuerde Escribir El Nombre En Ingles</p>}
+            
+            <div className='form-search'>
+                    <FavoritesButton></FavoritesButton>
+            </div>
+          
+            
         </div>
+        
     )
 }
 
