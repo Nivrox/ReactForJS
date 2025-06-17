@@ -5,9 +5,9 @@ import { DataContext } from "../Context/dataContext";
 import { useContext } from "react";
 
 
-const SingleMovie = () => {
+export const SingleMovie = () => {
     const {id} = useParams();
-    const {isLoading, error, data} = useFetch(`&i=${id}`);
+    const {isLoading, data} = useFetch(`&i=${id}`);
     const {favoritos, alternarFavorito} = useContext(DataContext)
     if (isLoading) {
         return <div className="loading"></div>;
@@ -17,7 +17,8 @@ const SingleMovie = () => {
     return <div style={{ color: "white", textAlign: "center" }}>No se pudo cargar la película.</div>;
     }
     const {Poster, Title, Year, Runtime, Genre, Director, Country, Actors, Plot, Released, Type} = data;	
-    const image = Poster === "N/A" ? DefaultImage : Poster;
+    const image = Poster && Poster !== "N/A" ? Poster : DefaultImage;
+    
     const esFavorita = favoritos.some((f) => f.imdbID == id)
     return (
         
@@ -52,4 +53,4 @@ const SingleMovie = () => {
     );
 };
 
-export default SingleMovie;
+
