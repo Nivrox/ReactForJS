@@ -31,10 +31,10 @@ const ItemPeliculas = ({id, title, year, type, poster}) => {
                     <div className = "item-movie" style={{backgroundImage : `url(${image})`}}>
                         <div className="info">
                             <h4>{ title }</h4>
-                            <h4 className="row-info">
+                            <p className="row-info">
                                 <span>{ type }</span>
                                 <span>{ year }</span>
-                            </h4>
+                            </p>
                         </div>
                     </div>
                 </Link>
