@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { DataProvider } from './Context/dataContext.jsx'
+import { DataProvider } from 'd:/Usuario/Documents/ReactForJS/PagOmdB/src/context/dataContext.jsx'
 import 'react-toastify'
 
 createRoot(document.getElementById('root')).render(

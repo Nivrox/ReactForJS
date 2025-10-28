@@ -1,5 +1,5 @@
 import { useContext } from "react"; 
-import { DataContext } from "../Context/dataContext";
+import { DataContext } from "../context/dataContext";
 import ItemPeliculas from "./ItemPeliculas";
 
     const Peliculas = () => {

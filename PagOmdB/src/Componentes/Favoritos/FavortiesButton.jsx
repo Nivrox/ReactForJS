@@ -1,5 +1,5 @@
 import React from "react";
-import Favoritos from "./Favoritos";
+import Favoritos from "d:/Usuario/Documents/ReactForJS/PagOmdB/src/Componentes/Favoritos/Favoritos.jsx";
 import { Link } from "react-router-dom";
 
 const FavoritesButton = () =>{
