@@ -4,9 +4,9 @@
 // PARA LA CLASE QUE VIENE 
 import './App.css'
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import SingleMovie from "d:/Usuario/Documents/ReactForJS/PagOmdB/src/componentes/SingleMovies.jsx";
-import MainPage from "d:/Usuario/Documents/ReactForJS/PagOmdB/src/componentes/MainPage.jsx";
-import Favoritos from 'd:/Usuario/Documents/ReactForJS/PagOmdB/src/Componentes/Favoritos/Favoritos.jsx';
+import SingleMovie from "./componentes/singleMovies.jsx";
+import MainPage from "./componentes/MainPage.jsx";
+import Favoritos from './Componentes/Favoritos/Favoritos.jsx';
 import { ToastContainer } from 'react-toastify';
 
 function App() {
