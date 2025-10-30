@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import { useFetch } from "../Usefetch/useFetch";
+import { useFetch } from "../Usefetch/UseFetch";
 import { toast } from "react-toastify";
 
 export const DataContext = createContext();

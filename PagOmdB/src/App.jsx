@@ -4,8 +4,8 @@
 // PARA LA CLASE QUE VIENE 
 import './App.css'
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import SingleMovie from "./componentes/singleMovies.jsx";
-import MainPage from "./componentes/MainPage.jsx";
+import SingleMovie from "./Componentes/SingleMovies.jsx";
+import MainPage from "./Componentes/MainPage.jsx";
 import Favoritos from './Componentes/Favoritos/Favoritos.jsx';
 import { ToastContainer } from 'react-toastify';
 

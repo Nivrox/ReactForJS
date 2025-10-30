@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import ItemFavoritos from "./Itemfavoritos";
-import { DataContext } from "../../context/dataContext";
+import { DataContext } from "../../Context/DataContext";
 
 const Favoritos = () => {
     const {favoritos} = useContext (DataContext);

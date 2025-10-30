@@ -1,4 +1,4 @@
-import FormSearch from "./formBusqueda";
+import FormSearch from "./FormBusqueda";
 import Peliculas from "./Peliculas";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 

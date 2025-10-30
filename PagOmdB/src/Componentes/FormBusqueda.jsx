@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
-import { DataContext} from '../context/dataContext';
-import FavoritesButton from './favoritos/favortiesButton';
+import FavoritesButton from './Favoritos/FavoritiesButton.jsx';
+import { DataContext} from '../Context/DataContext.jsx';
+
 
 //https://www.omdbapi.com/?apikey=18190454&s=batman
 //https://www.omdbapi.com/?apikey=18190454&i=tt0372784
