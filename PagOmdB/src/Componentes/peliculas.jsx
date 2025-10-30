@@ -1,6 +1,6 @@
 import { useContext } from "react"; 
 import { DataContext } from '../Context/dataContext.jsx';
-import ItemPeliculas from "./itempeliculas.jsx";
+import ItemPeliculas from "./itemPeliculas.jsx";
 
     const Peliculas = () => {
         const { isLoading, data } = useContext(DataContext);    
