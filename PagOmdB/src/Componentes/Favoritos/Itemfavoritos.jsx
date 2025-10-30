@@ -2,7 +2,7 @@ import DefaultImage from "/NoImage.png";
 import { useEffect, useState, useContext } from 'react';
 import { Link } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { DataContext } from "../../Context/DataContext";
+import { DataContext } from "../../Context/dataContext";
 
 
 const ItemFavoritos = ({id, title, year, type, poster}) => {

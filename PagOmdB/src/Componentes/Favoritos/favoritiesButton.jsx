@@ -5,7 +5,7 @@ const FavoritesButton = () =>{
     
     return (
         <div className="header-buttons">
-            <Link to ={`./Favorites`} style={{ color: "inherit", textDecoration: "inherit" }}>
+            <Link to ={`/Favorites`} style={{ color: "inherit", textDecoration: "inherit" }}>
                 <button className="btn-favoritos">⭐ Favoritos</button>
             </Link>
                         

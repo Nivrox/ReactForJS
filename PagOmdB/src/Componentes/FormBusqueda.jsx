@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import FavoritesButton from './Favoritos/FavoritiesButton.jsx';
+import FavoritesButton from './Favoritos/favoritiesButton.jsx';
 import { DataContext} from '../Context/DataContext.jsx';
 
 
