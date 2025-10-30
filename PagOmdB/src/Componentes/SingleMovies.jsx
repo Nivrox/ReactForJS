@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useFetch } from "../Usefetch/UseFetch";
+import { useFetch } from "../Usefetch/useFetch";
 import DefaultImage from "/NoImage.png"; // Adjust the path as necessary
 import { DataContext } from "../Context/DataContext";
 import { useContext } from "react";
